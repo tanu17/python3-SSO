@@ -1,0 +1,52 @@
+{
+    "strict": false,
+    "debug": true,
+    "sp": {
+        "entityId": "< insert your entity id here>",
+        "assertionConsumerService": {
+            "url": "<insert your acs here>",
+            "binding": "urn:oasis:names:tc:SAML:2.0:metadata"
+        },
+
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "<insert your sp x509 cert as string here>"
+        "privateKey": "<insert your sp private key as string here>"
+        },
+    "idp": {
+        "entityId": "https://ssoqa.paypalcorp.com",
+        "singleSignOnService": {
+            "url": "<insert idp url here>",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "x509cert": "<insert your idp x509 cert as string here>"
+        },    
+    "security": {
+        "nameIdEncrypted": false,
+        "authnRequestsSigned": true,
+        "logoutRequestSigned": false,
+        "logoutResponseSigned": false,
+        "signMetadata": true,
+        "wantMessagesSigned": true,
+        "wantAssertionsSigned": true,
+        "wantNameId" : true,
+        "wantNameIdEncrypted": false,
+        "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"
+    },
+    "contactPerson": {
+        "technical": {
+            "givenName": "<>",
+            "emailAddress": "<>"
+        },
+        "support": {
+            "givenName": "<>",
+            "emailAddress": "<>"
+        }
+    },
+    "organization": {
+        "en-US": {
+            "name": "<>",
+            "displayname": "<>",
+            "url": "<>"
+        }
+    }
+}
