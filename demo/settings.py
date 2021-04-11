@@ -10,8 +10,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ["sso.paypalcorp.com", "sso.paypalcorp.com/idp/SSO.saml2", "https://psi_demonstrator.isro-nsc.papalcorp.com","psi_demonstrator.isro-nsc.papalcorp.com", "ssoqa.paypalcorp.com", "ssoqa.paypalcorp.com/idp/SSO.saml2", "0.0.0.0"]
-
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
@@ -80,5 +79,4 @@ TEMPLATES = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS =['https://sso.paypalcorp.com','sso.paypalcorp.com','https://sso.paypalcorp.com/idp/SSO.saml2','sso.paypalcorp.com/idp/SSO.saml2',"https://psi_demonstrator.isro-nsc.papalcorp.com","psi_demonstrator.isro-nsc.papalcorp.com",'https://ssoqa.paypalcorp.com','ssoqa.paypalcorp.com','https://ssoqa.paypalcorp.com/idp/SSO.saml2','ssoqa.paypalcorp.com/idp/SSO.saml2']
-
+CSRF_TRUSTED_ORIGINS =[]
